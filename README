@@ -1,0 +1,22 @@
+This package of codes are released under GPL v3 license.
+If you find bug, please let me know via: xinguo2@alumni.cityu.edu.hk
+Guo Xin August 10, 2012
+
+This package of codes generates Table 1 in the draft
+"Towards a Mathematical Foundation of Immunology and Amino Acid Chains"
+available at arXiv: http://arxiv.org/abs/1205.6031v2
+
+The C dynamic library should be compiled in unix-like system
+(e.g. MacOS, Linux) since POSIX thread tool is used. To compile,
+just type
+
+$ make
+
+and the Makefile script will finish all the things.
+
+The main program is the R file "gen.Tab1.R" which will output
+an R data package "reports.Rdata" from where the predicted
+binding affinity can be found. These values are used to generate
+the Table 1 mentioned above. To run it, try
+
+$ Rscipt gen.Tab1.R
